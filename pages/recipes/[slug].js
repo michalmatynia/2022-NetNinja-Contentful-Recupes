@@ -33,6 +33,7 @@ export async function getStaticProps(context) {
   })
 
   if (!res.items.length) {
+    console.log('errr');
     return { 
       redirect: {
         destination: '/',
