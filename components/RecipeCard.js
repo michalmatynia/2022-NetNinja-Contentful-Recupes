@@ -11,6 +11,7 @@ const { title, slug, cookingTime, thumbnail } = recipe.fields
             src={'https:' + thumbnail.fields.file.url}
             width={thumbnail.fields.file.details.image.width}
             height={thumbnail.fields.file.details.image.height}
+            alt='fefew'
             />
         </div>
         <div className="content">

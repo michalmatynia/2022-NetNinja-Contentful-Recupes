@@ -1,20 +1,22 @@
 import { Link } from "next/link"
-import { useEffect } from "react"
-import { useRouter } from "next/router"
+// import { useEffect } from "react"
+// import { useRouter } from "next/router"
 
 export default function NotFound() {
 
-    const router = useRouter();
+  // This needs to be moved outside to root folder in order to build correctly
 
-    useEffect(() => {
-            if (router.isReady) {
-            }
+    // const router = useRouter();
 
-            setTimeout(()=>{
-                router.push('/')
-            }, 4000)
+    // useEffect(() => {
+    //         if (router.isReady) {
+    //         }
+
+    //         setTimeout(()=>{
+    //             router.push('/')
+    //         }, 4000)
         
-        }, [])
+    //     }, [])
 
   return (
     <div className="not-found">

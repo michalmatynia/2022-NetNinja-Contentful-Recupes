@@ -1,4 +1,5 @@
 import { createClient } from "contentful"
+import { useEffect } from "react"
 import RecipeCard from "../components/RecipeCard"
 
 export async function getStaticProps() {
@@ -16,19 +17,23 @@ export async function getStaticProps() {
     props: {
       recipes: res.items,
     },
-    revalidate: 10000
+    revalidate: 10000,
   }
 }
 
 export default function Recipes({recipes}) {
 
+useEffect(()=>{
+  console.log('er');
+},[])
+
   return (
     <div className="recipe-list">
-      {recipes.map(recipe => (
+      {/* {recipes.map(recipe => (
         <RecipeCard
           key={recipe.sys.id}
           recipe={recipe}/> 
-      ))}
+      ))} */}
       <style jsx>{`
       .recipe-list {
         display: grid;

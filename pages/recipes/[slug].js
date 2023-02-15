@@ -61,6 +61,7 @@ const { featuredImage, title, cookingTime, ingridients, method} = recipe.fields
         src={'https:' + featuredImage.fields.file.url }
         width={featuredImage.fields.file.details.image.width}
         height={featuredImage.fields.file.details.image.height}
+        alt='vre'
         />
         <h2>{title}</h2>
       </div>
